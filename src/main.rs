@@ -8,7 +8,20 @@ fn main() {
         println!("Big number")
     } else {
         println!("Small number")
-    }
+     }
     println!("{:?}", x);
+    looping()
 }
 
+// Repetitions
+
+fn looping() {
+    let mut z = 0;
+    loop {
+        if z == 5 {
+            break
+        }
+        println!("{:?}", z);
+        z = z + 1
+    }
+}
