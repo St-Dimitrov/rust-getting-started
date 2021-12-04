@@ -10,7 +10,7 @@ fn main() {
         println!("Small number")
      }
     println!("{:?}", x);
-    looping()
+    whileloop()
 }
 
 // Repetitions
@@ -23,5 +23,13 @@ fn looping() {
         }
         println!("{:?}", z);
         z = z + 1
+    }
+}
+
+fn whileloop() {
+    let mut y = 0;
+    while y != 5{
+        println!("{:?} {}", y, "with while");
+        y = y + 1;
     }
 }
