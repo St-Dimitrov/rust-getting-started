@@ -13,7 +13,7 @@
 fn main() {
     let mut m = 5;
     while m >= 1 {
-        println!("{}", m);
+        println!("{:?}", m);
         m = m - 1;
     }
     println!("done!")
