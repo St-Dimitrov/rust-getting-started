@@ -11,8 +11,8 @@
 // * Use a function to print the messages
 // * Use a match expression to determine which message
 //   to print
-fn print_message(a: bool) {
-    match a {
+fn print_message(gt_100: bool) {
+    match gt_100 {
         true => println!("it's big"),
         false => println!("it's small")
     }
