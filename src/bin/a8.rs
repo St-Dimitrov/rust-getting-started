@@ -34,6 +34,7 @@ fn main() {
         flavor: Flavor::Sweet,
         fluid_oz: 6.0
     };
+    print_drink(sweetypie);
     let fruitidity = Drink {
         flavor: Flavor::Fruity,
         fluid_oz: 8.5
