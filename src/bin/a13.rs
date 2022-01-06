@@ -20,3 +20,5 @@ fn main() {
     }
     println!("number of elements: {:?}", my_numbers.len())
 }
+
+//go over it again ~ are vectors just objects?
