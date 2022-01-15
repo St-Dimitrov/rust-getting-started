@@ -10,6 +10,7 @@
 
 // * Use a struct containing the student's name and locker assignment
 // * The locker assignment should use an Option<i32>
+
 #[derive(Debug)]
 enum Option<T>{
     Some(T),
@@ -49,7 +50,5 @@ fn main() {
                 Option::None => println!("Student doesn't have a locker")
             }
         }
-        
     }
-
 }
