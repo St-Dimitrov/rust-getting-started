@@ -18,4 +18,5 @@ fn main() {
     let lowercase_string = string_for_printing.to_lowercase();
     println!("Uppercase is: {:?}", uppercase_string);
     println!("Lowercase is: {:?}", lowercase_string);
+    println!("Both: {:?}, {:?}", string_for_printing.to_lowercase(), string_for_printing.to_uppercase())
 }
