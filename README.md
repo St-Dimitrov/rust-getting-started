@@ -24,3 +24,12 @@
 
 run exercise with:
   cargo run --bin "file name"
+  cargo run -q --bin
+
+triple slash for codumentation instead of comment /// for documenting your own programs
+for creating the documentation:
+  cargo doc
+  cargo doc --open
+
+for opening rust documentation:
+  rustup doc
