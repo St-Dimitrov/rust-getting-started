@@ -23,10 +23,10 @@ fn id_number(grocery: &Grocery) {
 }
 
 fn main() {
-    let carot = Grocery {
+    let carrot = Grocery {
         quantity: 17,
         id_number: 111
     };
-    quantity(&carot);
-    id_number(&carot);
+    quantity(&carrot);
+    id_number(&carrot);
 }

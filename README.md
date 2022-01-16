@@ -33,3 +33,4 @@ for creating the documentation:
 
 for opening rust documentation:
   rustup doc
+the extensive api documentation is very handy
