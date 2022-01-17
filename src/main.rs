@@ -10,7 +10,8 @@ fn main() {
         println!("Small number")
      }
     println!("{:?}", x);
-    whileloop()
+    whileloop();
+    names();
 }
 
 // Repetitions
@@ -32,4 +33,10 @@ fn whileloop() {
         println!("{:?} {}", y, "with while");
         y = y + 1;
     }
+}
+
+fn names() {
+    let first_name = "Stefan";
+    let last_name = "Dimitrov";
+    println!("{} {}", first_name, last_name);
 }
