@@ -44,8 +44,30 @@ struct Employee {
 fn access_request(employee: &Employee,) -> Result<(), String>{
     match employee.status {
         Status::Terminated => return Err("terminated".to_owned()),
-        _
+        _ => ()
+    }
+    match employee.position {
+        Titles::Maintenance => Ok(()),
+        Titles::Marketing => Ok(()),
+        Titles::Manager => Ok(()),
+        _ => Err("invalid position".to_owned())
     }
 }
 
-fn main() {}
+fn print_access(employee: &Employee) -> Result<(), String>{
+    let attempt_access = access_request(employee)?;
+    println!("Access - OK");
+    Ok(())
+}
+
+fn main() {
+    let bob = Employee {
+        position: Titles::KitchenStaff,
+        status: Status::Active
+    };
+
+    match print_access(&bob) {
+        Err(e) => println!("access denied: {:?}", e),
+        _ => (),
+    }
+}
