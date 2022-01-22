@@ -62,7 +62,7 @@ fn print_access(employee: &Employee) -> Result<(), String>{
 
 fn main() {
     let bob = Employee {
-        position: Titles::KitchenStaff,
+        position: Titles::Manager,
         status: Status::Active
     };
 
