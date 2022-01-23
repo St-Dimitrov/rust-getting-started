@@ -8,4 +8,14 @@
 // * (OPTIONAL) Read the documentation section `Formatting and Parsing`
 //   for examples on how to create custom time formats
 
-fn main() {}
+mod time {
+    use chrono;
+    pub fn TimeNow() {
+        println!("{:?}", chrono::offset::Local::now());
+        println!("{:?}", chrono::offset::Utc::now());
+    }
+}
+
+fn main() {
+    time::TimeNow();
+}
