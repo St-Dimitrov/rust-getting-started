@@ -10,12 +10,11 @@
 
 mod time {
     use chrono;
-    pub fn TimeNow() {
-        println!("{:?}", chrono::offset::Local::now());
-        println!("{:?}", chrono::offset::Utc::now());
+    pub fn time_now() {
+        println!("{:?}", chrono::offset::Local::now().format("%Y-%m-%d %H:%M:%S").to_string());
     }
 }
 
 fn main() {
-    time::TimeNow();
+    time::time_now();
 }
