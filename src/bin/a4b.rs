@@ -11,11 +11,9 @@
 // * Use an underscore (_) to match on any value
 
 fn main() {
-    let my_number = 1;
-    match my_number {
-        1 => println!("{}", "one"),
-        2 => println!("{}", "two"),
-        3 => println!("{}", "three"),
+    let number = 4;
+    match number {
+        1 | 2 | 3 => println!("{:?}", number),
         _ => println!("other"),
     }
 } 
